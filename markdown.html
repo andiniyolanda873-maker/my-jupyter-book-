@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Coding Python &#8212; My sample book</title>
+    <title>Coding Phyton (Jupyter) &#8212; My sample book</title>
   
   
   
@@ -61,7 +61,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Content with notebooks" href="notebooks.html" />
-    <link rel="prev" title="Materi KAL" href="intro.html" />
+    <link rel="prev" title="Penyelesaian sistem persamaan liner dengan menggunakan metode Gaussian" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -175,12 +175,12 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    Materi KAL
+                    Penyelesaian sistem persamaan liner dengan menggunakan metode Gaussian
                 </a>
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Coding Python</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Coding Phyton (Jupyter)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
 </ul>
@@ -237,7 +237,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+      <li><a href="https://github.com/andiniyolanda873-maker/my-jupyter-book-" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -254,7 +254,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fmarkdown.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/andiniyolanda873-maker/my-jupyter-book-/issues/new?title=Issue%20on%20page%20%2Fmarkdown.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -368,7 +368,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Coding Python</h1>
+    <h1>Coding Phyton (Jupyter)</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -378,8 +378,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-persamaan-linier">Sistem Persamaan Linier</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Sistem Persamaan Linier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pembuktian-python-jupyter-variabel-3">Pembuktian Python (Jupyter) variabel 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pembuktian-python-jupyter-variabel-4">Pembuktian Python (Jupyter) variabel 4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pembuktian-di-web-gaussian-sage-variabel-3">Pembuktian di web gaussian sage variabel 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pembuktian-di-web-gaussian-sage-variabel-4">Pembuktian di web gaussian sage variabel 4</a></li>
 </ul>
             </nav>
         </div>
@@ -391,67 +393,53 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="coding-python">
-<h1>Coding Python<a class="headerlink" href="#coding-python" title="Link to this heading">#</a></h1>
-<section id="sistem-persamaan-linier">
-<h2>Sistem Persamaan Linier<a class="headerlink" href="#sistem-persamaan-linier" title="Link to this heading">#</a></h2>
-<p><strong>Mencari Variabel ke-2</strong></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="coding-phyton-jupyter">
+<h1>Coding Phyton (Jupyter)<a class="headerlink" href="#coding-phyton-jupyter" title="Link to this heading">#</a></h1>
+<section id="pembuktian-python-jupyter-variabel-3">
+<h2>Pembuktian Python (Jupyter) variabel 3<a class="headerlink" href="#pembuktian-python-jupyter-variabel-3" title="Link to this heading">#</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">sympy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sp</span>
 
-<span class="c1"># Membuat matriks augmented</span>
-<span class="n">A</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">Matrix</span><span class="p">([</span>
-    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
-    <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span>
-    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">with_added_multiple_of_row</span><span class="p">(</span><span class="n">M</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+    <span class="n">M2</span> <span class="o">=</span> <span class="n">M</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">M2</span><span class="o">.</span><span class="n">row_op</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">v</span><span class="p">,</span> <span class="n">col</span><span class="p">:</span> <span class="n">v</span> <span class="o">+</span> <span class="n">k</span><span class="o">*</span><span class="n">M</span><span class="p">[</span><span class="n">j</span><span class="p">,</span> <span class="n">col</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">M2</span>
+
+<span class="n">M0</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">Matrix</span><span class="p">([</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">6</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
 <span class="p">])</span>
 
-<span class="c1"># Ubah ke RREF</span>
-<span class="n">rref_matrix</span><span class="p">,</span> <span class="n">pivot</span> <span class="o">=</span> <span class="n">A</span><span class="o">.</span><span class="n">rref</span><span class="p">()</span>
+<span class="n">M1</span> <span class="o">=</span> <span class="n">with_added_multiple_of_row</span><span class="p">(</span><span class="n">M0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">M2</span> <span class="o">=</span> <span class="n">with_added_multiple_of_row</span><span class="p">(</span><span class="n">M1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">M3</span> <span class="o">=</span> <span class="n">with_added_multiple_of_row</span><span class="p">(</span><span class="n">M2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">sp</span><span class="o">.</span><span class="n">Rational</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
 
-<span class="c1"># Ambil variabel ke-2 (y)</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">rref_matrix</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Nilai variabel ke-2 (y) adalah =&quot;</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="n">M3</span><span class="o">.</span><span class="n">rref</span><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Hasil Penyelesaiaan</strong></p>
-<p>Hasil Penyelesaian:
-x = 2
-y = 1</p>
 </section>
-<section id="id1">
-<h2>Sistem Persamaan Linier<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
-<p><strong>Mencari Variabel ke-3</strong></p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">sympy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sp</span>
-
-<span class="c1"># Membuat matriks augmented</span>
-<span class="n">A</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">Matrix</span><span class="p">([</span>
-    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
-    <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span>
-    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
+<section id="pembuktian-python-jupyter-variabel-4">
+<h2>Pembuktian Python (Jupyter) variabel 4<a class="headerlink" href="#pembuktian-python-jupyter-variabel-4" title="Link to this heading">#</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">B</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">Matrix</span><span class="p">([</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">8</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">7</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
 <span class="p">])</span>
 
-<span class="c1"># Mengubah ke bentuk RREF</span>
-<span class="n">rref_matrix</span><span class="p">,</span> <span class="n">pivot</span> <span class="o">=</span> <span class="n">A</span><span class="o">.</span><span class="n">rref</span><span class="p">()</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Bentuk RREF:&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">rref_matrix</span><span class="p">)</span>
-
-<span class="c1"># Mengambil solusi dari kolom terakhir</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">rref_matrix</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">rref_matrix</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
-<span class="n">z</span> <span class="o">=</span> <span class="n">rref_matrix</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Solusi:&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x =&quot;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;y =&quot;</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;z =&quot;</span><span class="p">,</span> <span class="n">z</span><span class="p">)</span>
+<span class="n">B</span><span class="o">.</span><span class="n">rref</span><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Hasilnya Penyelesaian :</strong></p>
-<p>x = 3
-y = 2
-z = 1</p>
+</section>
+<section id="pembuktian-di-web-gaussian-sage-variabel-3">
+<h2>Pembuktian di web gaussian sage variabel 3<a class="headerlink" href="#pembuktian-di-web-gaussian-sage-variabel-3" title="Link to this heading">#</a></h2>
+<p><img alt="Gauss Variabel 3" src="_images/gasuan-variabel-2.png" />
+<img src="images/gasuan-variabel-2.png" width="500"></p>
+</section>
+<section id="pembuktian-di-web-gaussian-sage-variabel-4">
+<h2>Pembuktian di web gaussian sage variabel 4<a class="headerlink" href="#pembuktian-di-web-gaussian-sage-variabel-4" title="Link to this heading">#</a></h2>
+<p><img alt="Gauss 4" src="_images/gasuan-variabel-4.png" />
+<img src="images/gasuan-variabel-4.png" width="500"></p>
 </section>
 </section>
 
@@ -491,7 +479,7 @@ z = 1</p>
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Materi KAL</p>
+        <p class="prev-next-title">Penyelesaian sistem persamaan liner dengan menggunakan metode Gaussian</p>
       </div>
     </a>
     <a class="right-next"
@@ -519,8 +507,10 @@ z = 1</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-persamaan-linier">Sistem Persamaan Linier</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Sistem Persamaan Linier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pembuktian-python-jupyter-variabel-3">Pembuktian Python (Jupyter) variabel 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pembuktian-python-jupyter-variabel-4">Pembuktian Python (Jupyter) variabel 4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pembuktian-di-web-gaussian-sage-variabel-3">Pembuktian di web gaussian sage variabel 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pembuktian-di-web-gaussian-sage-variabel-4">Pembuktian di web gaussian sage variabel 4</a></li>
 </ul>
   </nav></div>
 
