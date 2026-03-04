@@ -1,0 +1,819 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Materi KAL &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=1ae7504c"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Coding Python" href="markdown.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="#">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.jpg" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="_static/logo.jpg" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1 current active">
+                <a class="reference internal" href="#">
+                    Materi KAL
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="markdown.html">Coding Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/intro.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Materi KAL</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-sistem-persamaan-linear">Pengertian sistem persamaan linear</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-persamaan-liner">Definisi Persamaan Liner</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bentuk-matriks">Bentuk Matriks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konsep-operasi-baris-elementer-obe">Konsep Operasi Baris Elementer (OBE)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-penyelesaian-obe-variable-2">Contoh Penyelesaian OBE Variable 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-penyelesaian-obe-variable-3">Contoh Penyelesaian OBE Variable 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-geometri-spl-variabel-2">Penjelasan Geometri SPL Variabel 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualisasi-dengan-geogebra">Visualisasi dengan GeoGebra</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasaan-geometri-spl-variabel-ke-3">Penjelasaan geometri SPL Variabel ke 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Visualisasi dengan GeoGebra</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sumber-referensi">Sumber Referensi</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="materi-kal">
+<h1>Materi KAL<a class="headerlink" href="#materi-kal" title="Link to this heading">#</a></h1>
+<section id="pengertian-sistem-persamaan-linear">
+<h2>Pengertian sistem persamaan linear<a class="headerlink" href="#pengertian-sistem-persamaan-linear" title="Link to this heading">#</a></h2>
+<p>Sistem persamaan linear merupakan serangkaian persamaan linear yang terdiri dari satu atau lebih variabel yang tidak diketahui. Tujuan utama dari sistem persamaan linear adalah menyelesaikan masalah menggunakan aljabar linear elementer.Metode penyelesaian utamanya meliputi substitusi, eliminasi, grafik, dan matriks (invers/determinan). Dan SPL sering digunakan untuk mencari nilai variabel yang memenuhi persamaan, contohnya dalam pemodelan matematika dalam kesehariaan. Saya akan menjelaskan metode apa itu Penyelesaian Sistem Persamaan Linear ?</p>
+<p><strong>1. Metode substitusi</strong></p>
+<p>Metode substitusi adalah cara menyelesaikan sistem persamaan linear dengan mencari satu variabel dari salah satu persamaan, lalu menggantinya ke persamaan lain. Langkahnya: pilih persamaan yang paling mudah diselesaikan untuk satu variabel, substitusikan hasilnya ke persamaan kedua hingga menjadi satu variabel, selesaikan, lalu masukkan kembali nilainya untuk mendapatkan variabel lainnya. Terakhir, lakukan pengecekan dengan memasukkan kedua nilai ke persamaan awal.</p>
+<p><strong>2. Metode Eliminasi</strong></p>
+<p>Metode eliminasi menyelesaikan sistem persamaan linear dengan menghilangkan satu variabel melalui penjumlahan atau pengurangan persamaan. Caranya, samakan atau buat berlawanan koefisien salah satu variabel dengan mengalikan persamaan jika perlu, lalu jumlahkan atau kurangkan hingga variabel tersebut hilang. Selesaikan persamaan satu variabel yang diperoleh, kemudian substitusikan nilainya ke persamaan awal untuk mendapatkan variabel lainnya.</p>
+<p><strong>3. Metode Grafik</strong></p>
+<p>Metode grafik adalah cara visual untuk menyelesaikan sistem persamaan linear dua variabel dengan menggambar setiap persamaan sebagai garis di bidang Cartesius. Solusinya adalah titik potong kedua garis. Biasanya persamaan diubah ke bentuk ( y = mx + b ) agar mudah digambar menggunakan intersep dan kemiringan. Metode ini membantu memahami konsep, tetapi kurang akurat untuk perhitungan yang membutuhkan presisi tinggi.</p>
+<p><strong>4. Metode matriks (invers/determinan)</strong></p>
+<p>Metode matriks merupakan pendekatan aljabar yang sangat bagus untuk menyelesaikan sistem persamaan linier, terutama untuk sistem dengan banyak variabel. Dengan cara ini mengubah persamaan linear ke dalam bentuk matriks dan menggunakan operasi-operasi matriks untuk menemukan solusi.</p>
+</section>
+<section id="definisi-persamaan-liner">
+<h2>Definisi Persamaan Liner<a class="headerlink" href="#definisi-persamaan-liner" title="Link to this heading">#</a></h2>
+<p>Persamaan yang variabelnya hanya berpangkat satu.</p>
+<p><strong>Bentuk umum:</strong></p>
+<p>1 variabel : <strong>ax + b = 0</strong> solusi berupa angka
+2 variabel : <strong>ax + by + c =</strong> grafiknya garis lurus di bidang.
+3 variabel : <strong>ax + by + cz + d = 0</strong> grafiknya bidang datar di ruang 3D.</p>
+<p>Ciri utama: tidak ada pangkat lebih dari 1, tidak ada perkalian antar variabel.</p>
+<p>Solusinya adalah semua nilai variabel yang membuat persamaan benar.</p>
+</section>
+<section id="bentuk-matriks">
+<h2>Bentuk Matriks<a class="headerlink" href="#bentuk-matriks" title="Link to this heading">#</a></h2>
+<p>Matriks adalah susunan bilangan ril .Contoh persamaan liner dalam dua variabel adalah 2x - y+3 sedangkan matriks adalah gabungan bilangaan dalam bentuk tabel yang terdiri dari baris dan kolom di suatu bilangan dalam matriks di sebut elemen matriks.</p>
+<p>kedua konsep ini dapat dihubungkan dalam bentuk persamaan liner. sebuah sistem linier dapat dilakukan dalam bentuk matriks yaitu sebagai berikut.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+2x + y = 5 \\
+x - y = 1
+\end{cases}
+\end{split}\]</div>
+<p>dapat ditulis bentuk matriks seperti ini :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\left[
+\begin{array}{cc|c}
+2 &amp; 1 &amp; 5 \\
+1 &amp; -1 &amp; 1
+\end{array}
+\right]
+\end{split}\]</div>
+<p>Bentuk ini disebut bentuk matriks dan sistem persamaan liner yang secara umum dapat ditulis sebagai</p>
+<div class="math notranslate nohighlight">
+\[
+AX=B
+\]</div>
+<p>Dimana :</p>
+<ol class="arabic simple">
+<li><p>A adalah matriks konfesien</p></li>
+<li><p>X adalah matriks variabel</p></li>
+<li><p>B adalah matriks konstansta</p></li>
+</ol>
+<p>Dengan bentuk inipenyelesaiaan sistem dapat dilakukan dengan cara mengunakaan operasi matriks seperti invers matriks atau operasi barisan elementer.</p>
+</section>
+<section id="konsep-operasi-baris-elementer-obe">
+<h2>Konsep Operasi Baris Elementer (OBE)<a class="headerlink" href="#konsep-operasi-baris-elementer-obe" title="Link to this heading">#</a></h2>
+<p>Operasi Baris Elementer (OBE) adalah cara untuk mengubah bentuk matriks tanpa mengubah hasil atau solusi dari sistem persamaan linear. Biasanya digunakan untuk menyederhanakan matriks menjadi bentuk eselon atau eselon baris tereduksi agar lebih mudah diselesaikan.</p>
+<p>Tiga Operasi Baris Elementer:</p>
+<ol class="arabic simple">
+<li><p>Menukar dua baris :Posisi dua baris ditukar.</p></li>
+<li><p>Mengalikan satu baris dengan konstanta ≠ 0
+Semua elemen dalam satu baris dikalikan dengan suatu bilangan selain nol.</p></li>
+<li><p>Menambahkan kelipatan suatu baris ke baris lain
+Satu baris ditambah dengan hasil perkalian baris lain dengan suatu bilangan.</p></li>
+</ol>
+<p>Intinya: OBE dipakai untuk menyederhanakan matriks supaya mudah mencari solusi sistem persamaan linear atau mencari invers matriks.</p>
+</section>
+<section id="contoh-penyelesaian-obe-variable-2">
+<h2>Contoh Penyelesaian OBE Variable 2<a class="headerlink" href="#contoh-penyelesaian-obe-variable-2" title="Link to this heading">#</a></h2>
+<p><strong>Contoh Soal</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+2x + y = 5 \\
+x - y = 1
+\end{cases}
+\end{split}\]</div>
+<ol class="arabic simple">
+<li><p>Bentuk Matriks</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\left[
+\begin{array}{cc|c}
+2 &amp; 1 &amp; 5 \\
+1 &amp; -1 &amp; 1
+\end{array}
+\right]
+\end{split}\]</div>
+<ol class="arabic simple" start="2">
+<li><p>Nolkan angka di bawah 2 Baris kedua − ½ × baris pertama</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\xrightarrow{R_2 \to R_2 - \frac{1}{2}R_1}
+\left[
+\begin{array}{cc|c}
+2 &amp; 1 &amp; 5 \\
+0 &amp; -\frac{3}{2} &amp; -\frac{3}{2}
+\end{array}
+\right]
+\end{split}\]</div>
+<ol class="arabic simple" start="3">
+<li><p>Substitusi Balik
+Dari baris kedua:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+-\frac{3}{2}y = -\frac{3}{2}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+y = 1
+\]</div>
+<ol class="arabic simple" start="4">
+<li><p>Masukkan ke baris pertama:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+2x + 1 = 5
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+2x = 4
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+x = 2
+\]</div>
+<ol class="arabic simple" start="5">
+<li><p>Jawabaan Akhir</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+x = 2,\quad y = 1
+\]</div>
+</section>
+<section id="contoh-penyelesaian-obe-variable-3">
+<h2>Contoh Penyelesaian OBE Variable 3<a class="headerlink" href="#contoh-penyelesaian-obe-variable-3" title="Link to this heading">#</a></h2>
+<p><strong>Contoh Soal :</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+x + y + z = 6 \\
+2x + y + z = 9 \\
+x + 2y + z = 8
+\end{cases}
+\end{split}\]</div>
+<ol class="arabic simple">
+<li><p>Bentuk Matriks</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\left[
+\begin{array}{ccc|c}
+1 &amp; 1 &amp; 1 &amp; 6 \\
+2 &amp; 1 &amp; 1 &amp; 9 \\
+1 &amp; 2 &amp; 1 &amp; 8
+\end{array}
+\right]
+\end{split}\]</div>
+<ol class="arabic simple" start="2">
+<li><p>Nolkan bawah kolom pertama
+Baris kedua − 2×baris pertama
+Baris ketiga − baris pertama</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\left[
+\begin{array}{ccc|c}
+1 &amp; 1 &amp; 1 &amp; 6 \\
+0 &amp; -1 &amp; -1 &amp; -3 \\
+0 &amp; 1 &amp; 0 &amp; 2
+\end{array}
+\right]
+\end{split}\]</div>
+<ol class="arabic simple" start="3">
+<li><p>Substitusi Balik</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+-z = -1
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+z = 1
+\]</div>
+<ol class="arabic simple" start="4">
+<li><p>Masukkan ke baris kedua:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+-y - 1 = -3
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+-y = -2
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+y = 2
+\]</div>
+<ol class="arabic simple" start="5">
+<li><p>Masukkan ke baris pertama:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+x + 2 + 1 = 6
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+x = 3
+\]</div>
+<ol class="arabic simple" start="6">
+<li><p>Jawabaan Akhir</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\boxed{x = 3,\; y = 2,\; z = 1}
+\]</div>
+</section>
+<section id="penjelasan-geometri-spl-variabel-2">
+<h2>Penjelasan Geometri SPL Variabel 2<a class="headerlink" href="#penjelasan-geometri-spl-variabel-2" title="Link to this heading">#</a></h2>
+<p>Setiap persamaan linier 2 variabel merepresentasikan garis.</p>
+<p>Persamaan pertama:</p>
+<div class="math notranslate nohighlight">
+\[
+2x+y=5
+\]</div>
+<p>Persamaan Kedua :</p>
+<div class="math notranslate nohighlight">
+\[
+x-y=1
+\]</div>
+<p>Dua garis ini:</p>
+<ol class="arabic simple">
+<li><p>Jika berpotongan → satu solusi</p></li>
+<li><p>Jika sejajar → tidak ada solusi</p></li>
+<li><p>Jika berhimpit → tak hingga solusi</p></li>
+</ol>
+<p>Pada contoh kita, garis berpotongan di titik:</p>
+<div class="math notranslate nohighlight">
+\[
+(2,1)
+\]</div>
+</section>
+<section id="visualisasi-dengan-geogebra">
+<h2>Visualisasi dengan GeoGebra<a class="headerlink" href="#visualisasi-dengan-geogebra" title="Link to this heading">#</a></h2>
+<iframe src="https://www.geogebra.org/calculator/rejuvuqd?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+</section>
+<section id="penjelasaan-geometri-spl-variabel-ke-3">
+<h2>Penjelasaan geometri SPL Variabel ke 3<a class="headerlink" href="#penjelasaan-geometri-spl-variabel-ke-3" title="Link to this heading">#</a></h2>
+<p>Setiap persamaan linier 2 variabel bidang ruang.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+x + y + z = 6 \\
+2x + y + z = 9 \\
+x + 2y + z = 8
+\end{cases}
+\end{split}\]</div>
+<p>jika ada 3 persamaan berarti ada 3 bidang kemungkinan yang akan terjadi:</p>
+<ol class="arabic simple">
+<li><p>Jika ketiga bidang berpotongan di satu titik - satu solusi</p></li>
+<li><p>Jika berpotongan membentuk 1 garis -tak hingga solusi</p></li>
+<li><p>Jika tidak bertemu di satu titik - tidak ada solusi</p></li>
+</ol>
+</section>
+<section id="id1">
+<h2>Visualisasi dengan GeoGebra<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<iframe src="https://www.geogebra.org/calculator/erkwf6nm?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+</section>
+<section id="sumber-referensi">
+<h2>Sumber Referensi<a class="headerlink" href="#sumber-referensi" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>“Wikipedia. (2023). System of linear equations. Wikipedia.
+<a class="reference external" href="https://en.wikipedia.org/wiki/System_of_linear_equations%E2%80%9D">https://en.wikipedia.org/wiki/System_of_linear_equations”</a></p></li>
+<li><p>“Ruangguru. (n.d.). Mengenal matriks dalam matematika: Pengertian, jenis, dan transpose.
+<a class="reference external" href="https://www.ruangguru.com/blog/mengenal-matriks-dalam-matematika-pengertian-jenis-dan-transpose%E2%80%9D">https://www.ruangguru.com/blog/mengenal-matriks-dalam-matematika-pengertian-jenis-dan-transpose”</a></p></li>
+<li><p>“Konsep Matematika. (2015, September). Operasi baris elementer (OBE) dan penerapannya.
+<a class="reference external" href="https://konsep-matematika.com/2015/09/operasi-baris-elementer-obe-dan-penerapannya.html%E2%80%9D">https://konsep-matematika.com/2015/09/operasi-baris-elementer-obe-dan-penerapannya.html”</a></p></li>
+<li><p>“Scribd. (n.d.). 2-SPL-OBE.
+<a class="reference external" href="https://www.scribd.com/document/596092219/2-SPL-OBE%E2%80%9D">https://www.scribd.com/document/596092219/2-SPL-OBE”</a></p></li>
+</ol>
+</section>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="right-next"
+       href="markdown.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Coding Python</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-sistem-persamaan-linear">Pengertian sistem persamaan linear</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-persamaan-liner">Definisi Persamaan Liner</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bentuk-matriks">Bentuk Matriks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konsep-operasi-baris-elementer-obe">Konsep Operasi Baris Elementer (OBE)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-penyelesaian-obe-variable-2">Contoh Penyelesaian OBE Variable 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-penyelesaian-obe-variable-3">Contoh Penyelesaian OBE Variable 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-geometri-spl-variabel-2">Penjelasan Geometri SPL Variabel 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualisasi-dengan-geogebra">Visualisasi dengan GeoGebra</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasaan-geometri-spl-variabel-ke-3">Penjelasaan geometri SPL Variabel ke 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Visualisasi dengan GeoGebra</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sumber-referensi">Sumber Referensi</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
