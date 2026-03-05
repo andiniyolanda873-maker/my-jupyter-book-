@@ -1,5 +1,25 @@
 # MATERI KAL
 
+Materi KAL
+Pengertian istem persamaan linear
+Sistem persamaan linear merupakan serangkaian persamaan linear yang terdiri dari satu atau lebih variabel yang tidak diketahui. Tujuan utama dari sistem persamaan linear adalah menyelesaikan masalah menggunakan aljabar linear elementer.Metode penyelesaian utamanya meliputi substitusi, eliminasi, grafik, dan matriks (invers/determinan). Dan SPL sering digunakan untuk mencari nilai variabel yang memenuhi persamaan, contohnya dalam pemodelan matematika dalam kesehariaan. Saya akan menjelaskan metode apa itu Penyelesaian Sistem Persamaan Linear ?
+
+1. Metode substitusi
+
+Metode substitusi adalah cara menyelesaikan sistem persamaan linear dengan mencari satu variabel dari salah satu persamaan, lalu menggantinya ke persamaan lain. Langkahnya: pilih persamaan yang paling mudah diselesaikan untuk satu variabel, substitusikan hasilnya ke persamaan kedua hingga menjadi satu variabel, selesaikan, lalu masukkan kembali nilainya untuk mendapatkan variabel lainnya. Terakhir, lakukan pengecekan dengan memasukkan kedua nilai ke persamaan awal.
+
+2. Metode Eliminasi
+
+Metode eliminasi menyelesaikan sistem persamaan linear dengan menghilangkan satu variabel melalui penjumlahan atau pengurangan persamaan. Caranya, samakan atau buat berlawanan koefisien salah satu variabel dengan mengalikan persamaan jika perlu, lalu jumlahkan atau kurangkan hingga variabel tersebut hilang. Selesaikan persamaan satu variabel yang diperoleh, kemudian substitusikan nilainya ke persamaan awal untuk mendapatkan variabel lainnya.
+
+3. Metode Grafik
+
+Metode grafik adalah cara visual untuk menyelesaikan sistem persamaan linear dua variabel dengan menggambar setiap persamaan sebagai garis di bidang Cartesius. Solusinya adalah titik potong kedua garis. Biasanya persamaan diubah ke bentuk ( y = mx + b ) agar mudah digambar menggunakan intersep dan kemiringan. Metode ini membantu memahami konsep, tetapi kurang akurat untuk perhitungan yang membutuhkan presisi tinggi.
+
+4. Metode matriks (invers/determinan)
+
+Metode matriks merupakan pendekatan aljabar yang sangat bagus untuk menyelesaikan sistem persamaan linier, terutama untuk sistem dengan banyak variabel. Dengan cara ini mengubah persamaan linear ke dalam bentuk matriks dan menggunakan operasi-operasi matriks untuk menemukan solusi.
+
 **Definisi 1.1.1. Persamaan Linear.**
 
 _Sebuah ekspresi linear_ dalam _n_ perubah yang tidak diketahui (atau variabel) $x_1, x_2, \ldots, x_n$ adalah suatu bentuk yang dinyatakan sebagai
@@ -417,3 +437,13 @@ ada 4 jenis geometri yaitu:
 _bentuk bidang dengan geogebra_
 
 <iframe src="https://www.geogebra.org/calculator/uma5kx87?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+
+**Sumber referensi**
+
+“Wikipedia. (2023). System of linear equations. Wikipedia. https://en.wikipedia.org/wiki/System_of_linear_equations”
+
+“Ruangguru. (n.d.). Mengenal matriks dalam matematika: Pengertian, jenis, dan transpose. https://www.ruangguru.com/blog/mengenal-matriks-dalam-matematika-pengertian-jenis-dan-transpose”
+
+“Konsep Matematika. (2015, September). Operasi baris elementer (OBE) dan penerapannya. https://konsep-matematika.com/2015/09/operasi-baris-elementer-obe-dan-penerapannya.html”
+
+“Scribd. (n.d.). 2-SPL-OBE. https://www.scribd.com/document/596092219/2-SPL-OBE”
