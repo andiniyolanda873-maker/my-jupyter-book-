@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Penyelesaian sistem persamaan liner dengan menggunakan metode Gaussian &#8212; My sample book</title>
+    <title>MATERI KAL &#8212; My sample book</title>
   
   
   
@@ -178,7 +178,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1 current active">
                 <a class="reference internal" href="#">
-                    Penyelesaian sistem persamaan liner dengan menggunakan metode Gaussian
+                    MATERI KAL
                 </a>
             </li>
         </ul>
@@ -371,7 +371,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Penyelesaian sistem persamaan liner dengan menggunakan metode Gaussian</h1>
+    <h1>MATERI KAL</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -381,9 +381,16 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-spl-3-variabel-eliminasi-gauss">Contoh SPL 3 Variabel (Eliminasi Gauss)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-spl-4-variabel-eliminasi-gauss">Contoh SPL 4 Variabel (Eliminasi Gauss)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">MATERI KAL</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-1-1-3-sistem-persamaan-linier">Definisi 1.1.3. Sistem persamaan linier</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#keterangan-1-1-4">Keterangan 1.1.4</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-1-1-5-solusi-untuk-sistem-linier">Definisi 1.1.5. Solusi untuk sistem linier</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-hasil-untuk-solusi-tak-hingga">contoh hasil untuk solusi tak hingga</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cintoh-hasil-untuk-solusi-tunggal">cintoh hasil untuk solusi tunggal</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-hasil-untuk-tidak-ada-solusi">contoh hasil untuk tidak ada solusi</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-geometri-menggunakan-geogebra">penjelasan geometri menggunakan geogebra</a></li>
 </ul>
+
             </nav>
         </div>
     </div>
@@ -394,219 +401,378 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="penyelesaian-sistem-persamaan-liner-dengan-menggunakan-metode-gaussian">
-<h1>Penyelesaian sistem persamaan liner dengan menggunakan metode Gaussian<a class="headerlink" href="#penyelesaian-sistem-persamaan-liner-dengan-menggunakan-metode-gaussian" title="Link to this heading">#</a></h1>
-<section id="contoh-spl-3-variabel-eliminasi-gauss">
-<h2>Contoh SPL 3 Variabel (Eliminasi Gauss)<a class="headerlink" href="#contoh-spl-3-variabel-eliminasi-gauss" title="Link to this heading">#</a></h2>
-<p><strong>Soal</strong></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="materi-kal">
+<h1>MATERI KAL<a class="headerlink" href="#materi-kal" title="Link to this heading">#</a></h1>
+<p><strong>Definisi 1.1.1. Persamaan Linear.</strong></p>
+<p><em>Sebuah ekspresi linear</em> dalam <em>n</em> perubah yang tidak diketahui (atau variabel) <span class="math notranslate nohighlight">\(x_1, x_2, \ldots, x_n\)</span> adalah suatu bentuk yang dinyatakan sebagai</p>
+<div class="math notranslate nohighlight">
+\[
+a_{1}x_{1} + a_{2}x_{2} + \cdots + a_{n}x_{n},
+\]</div>
+<p>di mana <span class="math notranslate nohighlight">\(a_1, a_2, \ldots, a_n\)</span> adalah bilangan real konstan.</p>
+<p>Sebuah <em>persamaan linear</em> dalam peubah yang tidak diketahui <span class="math notranslate nohighlight">\(x_1, x_2, \ldots, x_n\)</span> adalah persamaan yang dapat disederhanakan, hanya dengan menggunakan operasi penjumlahan dan pengurangan, menjadi bentuk</p>
+<div class="math notranslate nohighlight">
+\[
+a_{1}x_{1} + a_{2}x_{2} + \cdots + a_{n}x_{n} = b,
+\]</div>
+<p>(1.1.1)</p>
+<p>yang disebut sebagai <em>bentuk standar</em>. Suatu persamaan dalam variabel tak diketahui <span class="math notranslate nohighlight">\(x_1, x_2, \ldots, x_n\)</span> disebut <em>nonlinear</em> jika tidak dapat disederhanakan ke bentuk (1.1.1) hanya dengan menggunakan penjumlahan dan pengurangan.</p>
+<p>Diberikan sebuah persamaan linear dengan bentuk standar (1.1.1), persamaan tersebut disebut <em>homogen</em> jika ( b = 0 ), dan <em>nonhomogen</em> jika <span class="math notranslate nohighlight">\(b \ne 0\)</span>.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="definisi-1-1-3-sistem-persamaan-linier">
+<h1>Definisi 1.1.3. Sistem persamaan linier<a class="headerlink" href="#definisi-1-1-3-sistem-persamaan-linier" title="Link to this heading">#</a></h1>
+<p>Sistem <strong>persamaan linier</strong> (atau <strong>sistem linier</strong>) adalah sekumpulan persamaan linier.</p>
+<p>Sistem linier <strong>homogen</strong> adalah sekumpulan persamaan linier homogen.</p>
+<p>Saat menampilkan sistem <em>m</em> persamaan dalam <em>n</em> tidak diketahui <span class="math notranslate nohighlight">\(x_1, x_2, \ldots, x_n\)</span>,<br />
+kami biasanya menulis setiap persamaan dalam bentuk standar dan menyelaraskan istilah<br />
+yang sesuai dari setiap persamaan ke dalam kolom:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\begin{cases}
-x + y + z = 6 \\
-2x - y + z = 3 \\
-x + 2y - z = 3
-\end{cases}
+a_{11}x_1 + a_{12}x_2 + \cdots + a_{1n}x_n &amp;= b_1 \\
+a_{21}x_1 + a_{22}x_2 + \cdots + a_{2n}x_n &amp;= b_2 \\
+\vdots \\
+a_{m1}x_1 + a_{m2}x_2 + \cdots + a_{mn}x_n &amp;= b_m
 \end{split}\]</div>
-<p><strong>Langkah 1: Ubah ke bentuk matriks augmented</strong></p>
+<p>Sistem homogen dengan demikian biasanya ditulis sebagai:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\left[
-\begin{array}{ccc|c}
-1 &amp; 1 &amp; 1 &amp; 6 \\
-2 &amp; -1 &amp; 1 &amp; 3 \\
-1 &amp; 2 &amp; -1 &amp; 3
-\end{array}
-\right]
+a_{11}x_1 + a_{12}x_2 + \cdots + a_{1n}x_n &amp;= 0 \\
+a_{21}x_1 + a_{22}x_2 + \cdots + a_{2n}x_n &amp;= 0 \\
+\vdots \\
+a_{m1}x_1 + a_{m2}x_2 + \cdots + a_{mn}x_n &amp;= 0
 \end{split}\]</div>
-<p><strong>Langkah 2: Hilangkan angka di bawah pivot pertama</strong></p>
-<p>Pivot pertama = 1 (baris 1 kolom 1)</p>
+</section>
+<hr class="docutils" />
+<section class="tex2jax_ignore mathjax_ignore" id="keterangan-1-1-4">
+<h1>Keterangan 1.1.4<a class="headerlink" href="#keterangan-1-1-4" title="Link to this heading">#</a></h1>
+<p>Anda akan ingin merasa nyaman dengan pengindeksan ganda yang digunakan untuk menampilkan sistem linier secepat mungkin.<br />
+Berikut adalah cara yang baik untuk mengarahkan diri Anda:</p>
+<ul class="simple">
+<li><p>Itu <span class="math notranslate nohighlight">\(i\)</span> muncul di <span class="math notranslate nohighlight">\(a_{ij}\)</span> dan <span class="math notranslate nohighlight">\(b_i\)</span> menunjukkan <span class="math notranslate nohighlight">\(i\)</span>-th dalam sistem yang ditampilkan, atau setara, <span class="math notranslate nohighlight">\(i\)</span>-persamaan.</p></li>
+<li><p>Itu <span class="math notranslate nohighlight">\(j\)</span> muncul di <span class="math notranslate nohighlight">\(a_{ij}\)</span> menunjukkan <span class="math notranslate nohighlight">\(j\)</span>-th dalam sistem yang ditampilkan, yang terkait dengan kolom <span class="math notranslate nohighlight">\(j\)</span>-th, untuk <span class="math notranslate nohighlight">\(1 \le j \le n\)</span>.</p></li>
+</ul>
+<ol class="arabic simple">
+<li><p>Pengertian Sistem Persamaan Linear (SPL)</p></li>
+</ol>
+<p>Sistem Persamaan Linear adalah kumpulan dua atau lebih persamaan linear yang memiliki variabel yang sama dan harus dipenuhi secara bersamaan.</p>
+<ol class="arabic simple" start="2">
+<li><p>Penyelesaian SPL dengan Operasi Baris Elementer (OBE)</p></li>
+</ol>
+<p>Operasi Baris Elementer digunakan pada matriks augmented untuk mencari solusi SPL.
+Tiga operasi dasar:</p>
+<ol class="arabic simple">
+<li><p>Menukar dua baris</p></li>
+<li><p>Mengalikan baris dengan bilangan ≠ 0</p></li>
+<li><p>Menjumlahkan baris dengan kelipatan baris lain</p></li>
+</ol>
+<p>Metode ini dikenal sebagai eliminasi Gauss atau Gauss-Jordan.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="definisi-1-1-5-solusi-untuk-sistem-linier">
+<h1>Definisi 1.1.5. Solusi untuk sistem linier<a class="headerlink" href="#definisi-1-1-5-solusi-untuk-sistem-linier" title="Link to this heading">#</a></h1>
+<p><strong>Solusi untuk persamaan linier</strong></p>
+<p><span class="math notranslate nohighlight">\(a_1x_1 + a_2x_2 + \cdots + a_nx_n = b\)</span></p>
+<p>adalah <span class="math notranslate nohighlight">\(n\)</span>-tuple <span class="math notranslate nohighlight">\((s_1, s_2, \ldots, s_n)\)</span> bilangan real yang penugasan variabel<br />
+<span class="math notranslate nohighlight">\(x_1 = s_1, x_2 = s_2, \ldots, x_n = s_n\)</span> membuat persamaan itu benar.<br />
+Kami mengatakan <span class="math notranslate nohighlight">\((s_1, s_2, \ldots, s_n)\)</span> <strong>memecahkan persamaan</strong> dalam kasus ini.</p>
+<p><strong>Solusi untuk sistem persamaan linier</strong></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\left[
-\begin{array}{ccc|c}
-1 &amp; 1 &amp; 1 &amp; 6 \\
-0 &amp; -3 &amp; -1 &amp; -9 \\
-0 &amp; 1 &amp; -2 &amp; -3
-\end{array}
-\right]
+a_{11}x_1 + a_{12}x_2 + \cdots + a_{1n}x_n &amp;= b_1 \\
+a_{21}x_1 + a_{22}x_2 + \cdots + a_{2n}x_n &amp;= b_2 \\
+\vdots \\
+a_{m1}x_1 + a_{m2}x_2 + \cdots + a_{mn}x_n &amp;= b_m
 \end{split}\]</div>
-<p>Matriks Menjadi:</p>
+<p>adalah <span class="math notranslate nohighlight">\(n\)</span>-tuple <span class="math notranslate nohighlight">\((s_1, s_2, \ldots, s_n)\)</span> itu adalah solusi untuk masing-masing sistem <em>m</em> persamaan.<br />
+Kami mengatakan <span class="math notranslate nohighlight">\((s_1, s_2, \ldots, s_n)\)</span> <strong>memecahkan sistem</strong> dalam hal ini.</p>
+<p>Mengingat sistem linier, kita akan berusaha untuk menemukan kumpulan semuasolusi untuk sistem. Seperti yang akan segera kita lihat, serangkaian solusi ini akan mengambil salah satu dari tiga bentuk kualitatif:</p>
+<ol class="arabic simple">
+<li><p>Set solusi kosong; yaitu, tidak ada solusi. Kami mengatakan sistem tidak konsistendalam kasus ini. Jika tidak, sistem disebut konsisten.</p></li>
+<li><p>Set solusi berisi satu elemen; yaitu, ada satu solusi.</p></li>
+<li><p>Set larutan berisi banyak unsur; yaitu, ada solusi tak terbatas.</p></li>
+</ol>
+<p><em>kode python untuk OBE(operasi baris elementer)</em></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+
+<span class="c1"># Jumlah variabel</span>
+<span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Masukkan jumlah variabel: &quot;</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Masukkan persamaan (format: a1 a2 ... an b)&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Contoh x + y = 5 → 1 1 5</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="c1"># Input matriks augmented</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">row</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">float</span><span class="p">,</span> <span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Persamaan </span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">: &quot;</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">()))</span>
+    <span class="n">A</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">)</span>
+
+<span class="c1"># ===== Menampilkan soal =====</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Sistem Persamaan Linear yang dimasukkan:&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">pers</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="n">pers</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span><span class="si">}</span><span class="s2">x</span><span class="si">{</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2"> &quot;</span>
+        <span class="k">if</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+            <span class="n">pers</span> <span class="o">+=</span> <span class="s2">&quot;+ &quot;</span>
+    <span class="n">pers</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;= </span><span class="si">{</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">n</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">pers</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Matriks awal:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+
+<span class="c1"># ===== OBE Gauss-Jordan =====</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+
+    <span class="c1"># Jika pivot 0 → tukar baris</span>
+    <span class="k">if</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">A</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">A</span><span class="p">[[</span><span class="n">i</span><span class="p">,</span><span class="n">k</span><span class="p">]]</span> <span class="o">=</span> <span class="n">A</span><span class="p">[[</span><span class="n">k</span><span class="p">,</span><span class="n">i</span><span class="p">]]</span>
+                <span class="k">break</span>
+
+    <span class="n">pivot</span> <span class="o">=</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">i</span><span class="p">]</span>
+
+    <span class="c1"># Jika pivot 0 dan baris nol → lewati</span>
+    <span class="k">if</span> <span class="n">pivot</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+      <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Baris </span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2"> adalah baris nol → kemungkinan solusi tak hingga&quot;</span><span class="p">)</span>
+      <span class="k">continue</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Membagi baris </span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2"> dengan </span><span class="si">{</span><span class="n">pivot</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">/</span> <span class="n">pivot</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+
+    <span class="c1"># Eliminasi</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">!=</span> <span class="n">j</span><span class="p">:</span>
+            <span class="n">A</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">A</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">-</span> <span class="n">A</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Langkah OBE ke-</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+
+<span class="c1"># ===== MENENTUKAN JENIS SOLUSI =====</span>
+<span class="n">tidak_ada</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">baris_nol</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">,:</span><span class="n">n</span><span class="p">],</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">np</span><span class="o">.</span><span class="n">isclose</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">n</span><span class="p">],</span> <span class="mi">0</span><span class="p">):</span>
+        <span class="n">tidak_ada</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="mi">0</span><span class="p">):</span>
+        <span class="n">baris_nol</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hasil akhir matriks:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">tidak_ada</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sistem tidak memiliki solusi&quot;</span><span class="p">)</span>
+
+<span class="k">elif</span> <span class="n">baris_nol</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sistem memiliki solusi tak hingga&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Gunakan parameter bebas&quot;</span><span class="p">)</span>
+
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Solusi tunggal:&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;x</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2"> =&quot;</span><span class="p">,</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">n</span><span class="p">])</span>
+</pre></div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="contoh-hasil-untuk-solusi-tak-hingga">
+<h1>contoh hasil untuk solusi tak hingga<a class="headerlink" href="#contoh-hasil-untuk-solusi-tak-hingga" title="Link to this heading">#</a></h1>
+<p>Masukkan jumlah variabel: 2</p>
+<p>Masukkan persamaan (format: a1 a2 … an b)
+Contoh x + y = 5 → 1 1 5</p>
+<p>Persamaan 1: 1 1 2
+Persamaan 2: 2 2 4</p>
+<p>Sistem Persamaan Linear yang dimasukkan:</p>
+<div class="math notranslate nohighlight">
+\[
+1.0x1 + 1.0x2 = 2.0
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+2.0x1 + 2.0x2 = 4.0
+\]</div>
+<p><strong>Matriks awal:</strong></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\left[
-\begin{array}{ccc|c}
-1 &amp; 1 &amp; 1 &amp; 6 \\
-0 &amp; -3 &amp; -1 &amp; -9 \\
-0 &amp; 0 &amp; -\frac{7}{3} &amp; -6
-\end{array}
-\right]
+\begin{bmatrix}
+1 &amp; 1 &amp; 2 \\
+2 &amp; 2 &amp; 4
+\end{bmatrix}
 \end{split}\]</div>
-<p><strong>Langkah 4: Substitusi balik</strong>
-Dari baris 3:</p>
+<p><strong>Membagi baris 1 dengan 1.0</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 1 &amp; 2 \\
+2 &amp; 2 &amp; 4
+\end{bmatrix}
+\end{split}\]</div>
+<p><strong>Langkah OBE ke-1:</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 1 &amp; 2 \\
+0 &amp; 0 &amp; 0
+\end{bmatrix}
+\end{split}\]</div>
+<p>Baris 2 adalah baris nol <span class="math notranslate nohighlight">\(\rightarrow\)</span> kemungkinan solusi tak hingga.</p>
+<p><strong>Hasil akhir matriks:</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 1 &amp; 2 \\
+0 &amp; 0 &amp; 0
+\end{bmatrix}
+\end{split}\]</div>
+<p>Sistem memiliki solusi tak hingga.<br />
+Gunakan parameter bebas.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="cintoh-hasil-untuk-solusi-tunggal">
+<h1>cintoh hasil untuk solusi tunggal<a class="headerlink" href="#cintoh-hasil-untuk-solusi-tunggal" title="Link to this heading">#</a></h1>
+<p>masukkan jumlah variabel: 2</p>
+<p>Masukkan persamaan (format: a1 a2 … an b)
+Contoh x + y = 5 → 1 1 5</p>
+<p>Persamaan 1: 1 1 5
+Persamaan 2: 2 -1 1</p>
+<p>Sistem Persamaan Linear yang dimasukkan:</p>
 <div class="math notranslate nohighlight">
 \[
--\frac{7}{3}z = -6
+1.0x1 + 1.0x2 = 5.0
 \]</div>
 <div class="math notranslate nohighlight">
 \[
-z = \frac{-6}{-\frac{7}{3}}
+2.0x1 + -1.0x2 = 1.0
+\]</div>
+<p><strong>Matriks awal:</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 1 &amp; 5 \\
+2 &amp; -1 &amp; 1
+\end{bmatrix}
+\end{split}\]</div>
+<p><strong>Membagi baris 1 dengan 1.0</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 1 &amp; 5 \\
+2 &amp; -1 &amp; 1
+\end{bmatrix}
+\end{split}\]</div>
+<p><strong>Langkah OBE ke-1:</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 1 &amp; 5 \\
+0 &amp; -3 &amp; -9
+\end{bmatrix}
+\end{split}\]</div>
+<p><strong>Membagi baris 2 dengan -3.0</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 1 &amp; 5 \\
+0 &amp; 1 &amp; 3
+\end{bmatrix}
+\end{split}\]</div>
+<p><strong>Langkah OBE ke-2:</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 0 &amp; 2 \\
+0 &amp; 1 &amp; 3
+\end{bmatrix}
+\end{split}\]</div>
+<p><strong>Hasil akhir matriks:</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 0 &amp; 2 \\
+0 &amp; 1 &amp; 3
+\end{bmatrix}
+\end{split}\]</div>
+<p><strong>Solusi tunggal:</strong></p>
+<div class="math notranslate nohighlight">
+\[
+x_1 = 2
 \]</div>
 <div class="math notranslate nohighlight">
 \[
-z = -6 \times \left(-\frac{3}{7}\right)
-\]</div>
-<div class="math notranslate nohighlight">
-\[
-z = \frac{18}{7}
-\]</div>
-<p>Masukkan ke baris 2:</p>
-<div class="math notranslate nohighlight">
-\[
--3y - z = -9
-\]</div>
-<div class="math notranslate nohighlight">
-\[
--3y - \frac{18}{7} = -9
-\]</div>
-<div class="math notranslate nohighlight">
-\[
--3y = -9 + \frac{18}{7}
-\]</div>
-<div class="math notranslate nohighlight">
-\[
--3y = -\frac{45}{7}
-\]</div>
-<div class="math notranslate nohighlight">
-\[
-y = \frac{15}{7}
-\]</div>
-<p>Masukkan ke baris 1:</p>
-<div class="math notranslate nohighlight">
-\[
-x + y + z = 6
-\]</div>
-<div class="math notranslate nohighlight">
-\[
-x + \frac{15}{7} + \frac{18}{7} = 6
-\]</div>
-<div class="math notranslate nohighlight">
-\[
-x + \frac{33}{7} = 6
-\]</div>
-<div class="math notranslate nohighlight">
-\[
-x = 6 - \frac{33}{7}
-\]</div>
-<div class="math notranslate nohighlight">
-\[
-x = \frac{9}{7}
-\]</div>
-<p><strong>Jawaban SPL 3 Variabel</strong></p>
-<div class="math notranslate nohighlight">
-\[
-x = \frac{9}{7}, \quad
-y = \frac{15}{7}, \quad
-z = \frac{18}{7}
+x_2 = 3
 \]</div>
 </section>
-<section id="contoh-spl-4-variabel-eliminasi-gauss">
-<h2>Contoh SPL 4 Variabel (Eliminasi Gauss)<a class="headerlink" href="#contoh-spl-4-variabel-eliminasi-gauss" title="Link to this heading">#</a></h2>
-<p><strong>Soal</strong></p>
+<section class="tex2jax_ignore mathjax_ignore" id="contoh-hasil-untuk-tidak-ada-solusi">
+<h1>contoh hasil untuk tidak ada solusi<a class="headerlink" href="#contoh-hasil-untuk-tidak-ada-solusi" title="Link to this heading">#</a></h1>
+<p>Masukkan jumlah variabel: 2</p>
+<p>Masukkan persamaan (format: a1 a2 … an b)
+Contoh x + y = 5 → 1 1 5</p>
+<p>Persamaan 1: 1 1 2
+Persamaan 2: 1 1 5</p>
+<p>Sistem Persamaan Linear yang dimasukkan:</p>
+<div class="math notranslate nohighlight">
+\[
+1x_1 + 1x_2 = 2
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+1x_1 + 1x_2 = 5
+\]</div>
+<p><strong>Matriks awal:</strong></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\begin{cases}
-x + y + z + w = 10 \\
-2x - y + z + w = 8 \\
-x + 2y - z + w = 7 \\
-x + y + z - w = 4
-\end{cases}
+\begin{bmatrix}
+1 &amp; 1 &amp; 2 \\
+1 &amp; 1 &amp; 5
+\end{bmatrix}
 \end{split}\]</div>
-<p><strong>Langkah 1: Matriks Augmented</strong></p>
+<p><strong>Membagi baris 1 dengan 1.0</strong></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\left[
-\begin{array}{cccc|c}
-1 &amp; 1 &amp; 1 &amp; 1 &amp; 10 \\
-2 &amp; -1 &amp; 1 &amp; 1 &amp; 8 \\
-1 &amp; 2 &amp; -1 &amp; 1 &amp; 7 \\
-1 &amp; 1 &amp; 1 &amp; -1 &amp; 4
-\end{array}
-\right]
+\begin{bmatrix}
+1 &amp; 1 &amp; 2 \\
+1 &amp; 1 &amp; 5
+\end{bmatrix}
 \end{split}\]</div>
-<p><strong>Langkah 2: Nolkan bawah pivot pertama</strong>
-Hasil:</p>
+<p><strong>Langkah OBE ke-1:</strong></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\left[
-\begin{array}{cccc|c}
-1 &amp; 1 &amp; 1 &amp; 1 &amp; 10 \\
-0 &amp; -3 &amp; -1 &amp; -1 &amp; -12 \\
-0 &amp; 1 &amp; -2 &amp; 0 &amp; -3 \\
-0 &amp; 0 &amp; 0 &amp; -2 &amp; -6
-\end{array}
-\right]
+\begin{bmatrix}
+1 &amp; 1 &amp; 2 \\
+0 &amp; 0 &amp; 3
+\end{bmatrix}
 \end{split}\]</div>
-<p><strong>Langkah 3: Dari baris terakhir</strong></p>
+<p>Baris kedua menghasilkan persamaan:</p>
 <div class="math notranslate nohighlight">
 \[
--2w = -6
+0x_1 + 0x_2 = 3
 \]</div>
-<div class="math notranslate nohighlight">
-\[
-w = 3
-\]</div>
-<p><strong>Langkah 4: Substitusi balik</strong>
-Baris 3</p>
-<div class="math notranslate nohighlight">
-\[
-y - 2z= 3
-\]</div>
-<p>Baris 2</p>
-<div class="math notranslate nohighlight">
-\[
--3y - z - 3 = -12
-\]</div>
-<p>Masukkan w = 3</p>
-<div class="math notranslate nohighlight">
-\[
--3y - z - 3 = -12
-\]</div>
-<div class="math notranslate nohighlight">
-\[
--3y - z = -9
-\]</div>
-<p>Selesaikan sistem 2 variabel</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{cases}
-y - 2z = -3 \\
--3y - z = -9
-\end{cases}
-\end{split}\]</div>
-<p>Hasil:</p>
-<div class="math notranslate nohighlight">
-\[
-z = 3
-\]</div>
-<div class="math notranslate nohighlight">
-\[
-y = 3
-\]</div>
-<p>Masukkan ke baris 1:</p>
-<div class="math notranslate nohighlight">
-\[
-x + 3 + 3 + 3 = 10
-\]</div>
-<div class="math notranslate nohighlight">
-\[
-x = 1
-\]</div>
-<p><strong>Jawaban SPL 4 Variabel</strong></p>
-<div class="math notranslate nohighlight">
-\[
-x = 1,\quad y = 3,\quad z = 3,\quad w = 3
-\]</div>
+<p>Karena persamaan tersebut tidak mungkin terpenuhi, sistem <strong>tidak memiliki solusi (inkonsisten)</strong>.
+Sistem tidak memiliki solusi</p>
 </section>
+<section class="tex2jax_ignore mathjax_ignore" id="penjelasan-geometri-menggunakan-geogebra">
+<h1>penjelasan geometri menggunakan geogebra<a class="headerlink" href="#penjelasan-geometri-menggunakan-geogebra" title="Link to this heading">#</a></h1>
+<p>Geometri adalah cabang matematika yang mempelajari bentuk, ukuran, posisi, dan hubungan antar objek di ruang seperti titik, garis, sudut, bidang, dan bangun ruang.</p>
+<p>unsur dasar geometri ada 5 yaitu:</p>
+<ol class="arabic simple">
+<li><p>titik = tidak punya ukuran, hanya posisi</p></li>
+<li><p>garis = kumpulan titik yang memanjang</p></li>
+<li><p>sudut = pertemuan dua garis</p></li>
+<li><p>bidang = permukaan datar</p></li>
+<li><p>ruang = tempat objek 3D berada</p></li>
+</ol>
+<p>ada 4 jenis geometri yaitu:</p>
+<ol class="arabic simple">
+<li><p>geometri datar(2D) - mempelajari mengenai bangun pada bidang datar</p></li>
+<li><p>geometri ruang(3D) - mempelajari bangun yang punya volume</p></li>
+<li><p>geometri analitik - menggabungkan geometri dengan aljabar menggunakan koordinat(grafik x-y)</p></li>
+<li><p>geometri transformasi - mempelajari perubahan bntuk tanpa mengubah sifat dasar</p></li>
+</ol>
+<iframe src="https://www.geogebra.org/calculator/y3tgyaaw?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+<p><em>bentuk bidang dengan geogebra</em></p>
+<iframe src="https://www.geogebra.org/calculator/uma5kx87?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -666,9 +832,16 @@ x = 1,\quad y = 3,\quad z = 3,\quad w = 3
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-spl-3-variabel-eliminasi-gauss">Contoh SPL 3 Variabel (Eliminasi Gauss)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-spl-4-variabel-eliminasi-gauss">Contoh SPL 4 Variabel (Eliminasi Gauss)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">MATERI KAL</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-1-1-3-sistem-persamaan-linier">Definisi 1.1.3. Sistem persamaan linier</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#keterangan-1-1-4">Keterangan 1.1.4</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-1-1-5-solusi-untuk-sistem-linier">Definisi 1.1.5. Solusi untuk sistem linier</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-hasil-untuk-solusi-tak-hingga">contoh hasil untuk solusi tak hingga</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cintoh-hasil-untuk-solusi-tunggal">cintoh hasil untuk solusi tunggal</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-hasil-untuk-tidak-ada-solusi">contoh hasil untuk tidak ada solusi</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-geometri-menggunakan-geogebra">penjelasan geometri menggunakan geogebra</a></li>
 </ul>
+
   </nav></div>
 
 </div></div>
